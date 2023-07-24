@@ -1,0 +1,38 @@
+﻿@model JN_WEB.Entities.UsuarioEnt
+
+@{
+    ViewData["Title"] = "Cambiar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("CambiarContrasennaUsuario", "Home", FormMethod.Post, new { @class = "text-start" }))
+{
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="card card-plain col-lg-8">
+
+            <div class="card-body">
+                @Html.Label("Contraseña")   
+                <div class="input-group input-group-outline mb-3">
+                    @Html.TextBoxFor(x => x.Contrasenna, new { @class="form-control", @type="password", @placeholder="Contraseña" })
+                </div>
+
+                @Html.Label("Confirmar Contraseña")
+                <div class="input-group input-group-outline mb-3">
+                    @Html.TextBoxFor(x => x.ConfirmarContrasenna, new { @class="form-control", @type="password", @placeholder="Confirmar Contraseña" })
+                </div>
+
+                @if (ViewBag.Mensaje != null)
+                {
+                    <div style="text-align:center" class="alert alert-light" role="alert">
+                        @ViewBag.Mensaje
+                    </div>
+                }
+
+                <div style="text-align:right">
+                    <button type="submit" class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0" style="width:25%!important">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
