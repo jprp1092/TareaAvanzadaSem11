@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "JN_WEB/1.0.0": {
         "dependencies": {
+          "AspNetCore.ReCaptcha": "1.7.0",
           "Dapper": "2.0.123",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.15",
           "OpenAI": "1.7.2",
@@ -15,6 +16,22 @@
         },
         "runtime": {
           "JN_WEB.dll": {}
+        }
+      },
+      "AspNetCore.ReCaptcha/1.7.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Options": "3.1.0"
+        },
+        "runtime": {
+          "lib/net6.0/AspNetCore.ReCaptcha.dll": {
+            "assemblyVersion": "1.7.0.0",
+            "fileVersion": "1.7.0.0"
+          }
+        },
+        "resources": {
+          "lib/net6.0/nl/AspNetCore.ReCaptcha.resources.dll": {
+            "locale": "nl"
+          }
         }
       },
       "Dapper/2.0.123": {
@@ -1081,7 +1098,7 @@
       },
       "Microsoft.Extensions.Configuration.Abstractions/2.1.0": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "2.1.0"
+          "Microsoft.Extensions.Primitives": "3.1.0"
         }
       },
       "Microsoft.Extensions.Configuration.Binder/2.1.0": {
@@ -1100,7 +1117,7 @@
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "Microsoft.Extensions.Logging": "2.1.0",
-          "Microsoft.Extensions.Options": "2.1.0"
+          "Microsoft.Extensions.Options": "3.1.0"
         }
       },
       "Microsoft.Extensions.Logging/2.1.0": {
@@ -1108,22 +1125,17 @@
           "Microsoft.Extensions.Configuration.Binder": "2.1.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "2.1.0",
-          "Microsoft.Extensions.Options": "2.1.0"
+          "Microsoft.Extensions.Options": "3.1.0"
         }
       },
       "Microsoft.Extensions.Logging.Abstractions/2.1.0": {},
-      "Microsoft.Extensions.Options/2.1.0": {
+      "Microsoft.Extensions.Options/3.1.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Primitives": "2.1.0"
+          "Microsoft.Extensions.Primitives": "3.1.0"
         }
       },
-      "Microsoft.Extensions.Primitives/2.1.0": {
-        "dependencies": {
-          "System.Memory": "4.5.5",
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
-        }
-      },
+      "Microsoft.Extensions.Primitives/3.1.0": {},
       "Microsoft.NET.StringTools/17.3.2": {
         "dependencies": {
           "System.Memory": "4.5.5",
@@ -2331,6 +2343,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AspNetCore.ReCaptcha/1.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lDuXXZUIB2kNh3c3MYxB2nXlAw2ixJdZagZvkrpZhhKXEdcmIMMWLpH3FZY28ls0An/U+vBbebTpI+kBx/z3YA==",
+      "path": "aspnetcore.recaptcha/1.7.0",
+      "hashPath": "aspnetcore.recaptcha.1.7.0.nupkg.sha512"
+    },
     "Dapper/2.0.123": {
       "type": "package",
       "serviceable": true,
@@ -2877,19 +2896,19 @@
       "path": "microsoft.extensions.logging.abstractions/2.1.0",
       "hashPath": "microsoft.extensions.logging.abstractions.2.1.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Options/2.1.0": {
+    "Microsoft.Extensions.Options/3.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-VOM1pPMi9+7/4Vc9aPLU8btHOBQy1+AvpqxLxFI2OVtqGv+1klPaV59g9R6aSt2U7ijfB3TjvAO4Tc/cn9/hxA==",
-      "path": "microsoft.extensions.options/2.1.0",
-      "hashPath": "microsoft.extensions.options.2.1.0.nupkg.sha512"
+      "sha512": "sha512-9b6JHY7TAXrSfZ6EEGf+j8XnqKIiMPErfmaNXhJYSCb+BUW2H4RtzkNJvwLJzwgzqBP0wtTjyA6Uw4BPPdmkMw==",
+      "path": "microsoft.extensions.options/3.1.0",
+      "hashPath": "microsoft.extensions.options.3.1.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Primitives/2.1.0": {
+    "Microsoft.Extensions.Primitives/3.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gMwH6wgWOPfyfLfMLEP+ZF7/MSJq35e0xxKEYUjt8veEznY45nBVqdfI876+9SFQq2ChcqKf2UyYc2XYj2v27w==",
-      "path": "microsoft.extensions.primitives/2.1.0",
-      "hashPath": "microsoft.extensions.primitives.2.1.0.nupkg.sha512"
+      "sha512": "sha512-LEKAnX7lhUhSoIc2XraCTK3M4IU/LdVUzCe464Sa4+7F4ZJuXHHRzZli2mDbiT4xzAZhgqXbvfnb5+CNDcQFfg==",
+      "path": "microsoft.extensions.primitives/3.1.0",
+      "hashPath": "microsoft.extensions.primitives.3.1.0.nupkg.sha512"
     },
     "Microsoft.NET.StringTools/17.3.2": {
       "type": "package",

@@ -1,4 +1,5 @@
-﻿using JN_WEB.Entities;
+﻿using AspNetCore.ReCaptcha;
+using JN_WEB.Entities;
 using JN_WEB.Interfaces;
 using JN_WEB.Models;
 using Microsoft.AspNetCore.Http;
@@ -7,6 +8,7 @@ using System.Diagnostics;
 
 namespace JN_WEB.Controllers
 {
+    [ValidateReCaptcha]
     public class HomeController : Controller
     {
         private readonly IUsuariosModel _usuariosModel;

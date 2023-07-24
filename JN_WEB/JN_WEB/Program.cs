@@ -1,3 +1,4 @@
+using AspNetCore.ReCaptcha;
 using JN_WEB.Interfaces;
 using JN_WEB.Models;
 
@@ -8,6 +9,7 @@ builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession();
 builder.Services.AddHttpClient();
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddReCaptcha(builder.Configuration.GetSection("GoogleReCaptcha"));
 
 builder.Services.AddScoped<IUsuariosModel, UsuariosModel>();
 builder.Services.AddScoped<ICursosModel, CursosModel>();

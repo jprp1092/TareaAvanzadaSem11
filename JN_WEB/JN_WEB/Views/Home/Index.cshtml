@@ -4,6 +4,8 @@
     ViewData["Title"] = "Inicio";
     Layout = "~/Views/Shared/_Layout - Inicio.cshtml";
 }
+@using AspNetCore.ReCaptcha
+@Html.ReCaptcha()
 
 <span class="mask bg-gradient-dark opacity-6"></span>
 <div class="container my-auto">

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\josmi\\source\\repos\\JN_WEB\\JN_WEB\\JN_WEB\\JN_WEB.csproj": {}
+    "C:\\Users\\Chris\\Documents\\GitHub\\TareaAvanzadaSem11\\JN_WEB\\JN_WEB\\JN_WEB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\josmi\\source\\repos\\JN_WEB\\JN_WEB\\JN_WEB\\JN_WEB.csproj": {
+    "C:\\Users\\Chris\\Documents\\GitHub\\TareaAvanzadaSem11\\JN_WEB\\JN_WEB\\JN_WEB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\josmi\\source\\repos\\JN_WEB\\JN_WEB\\JN_WEB\\JN_WEB.csproj",
+        "projectUniqueName": "C:\\Users\\Chris\\Documents\\GitHub\\TareaAvanzadaSem11\\JN_WEB\\JN_WEB\\JN_WEB.csproj",
         "projectName": "JN_WEB",
-        "projectPath": "C:\\Users\\josmi\\source\\repos\\JN_WEB\\JN_WEB\\JN_WEB\\JN_WEB.csproj",
-        "packagesPath": "C:\\Users\\josmi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\josmi\\source\\repos\\JN_WEB\\JN_WEB\\JN_WEB\\obj\\",
+        "projectPath": "C:\\Users\\Chris\\Documents\\GitHub\\TareaAvanzadaSem11\\JN_WEB\\JN_WEB\\JN_WEB.csproj",
+        "packagesPath": "C:\\Users\\Chris\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Chris\\Documents\\GitHub\\TareaAvanzadaSem11\\JN_WEB\\JN_WEB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\josmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AspNetCore.ReCaptcha": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
             "Dapper": {
               "target": "Package",
               "version": "[2.0.123, )"
@@ -76,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
